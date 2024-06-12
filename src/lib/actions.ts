@@ -65,7 +65,7 @@ export const logout = async () => {
 export const getMovies = async (type: string, page: number) => {
   const data = await (
     await fetch(
-      "http://localhost:3000/api/movies?type=" + type + "&page=" + page
+      "https://last-pearl.vercel.app/api/movies?type=" + type + "&page=" + page
     )
   ).json();
   return data;
